@@ -3,48 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <title>Twitter</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="assets/icons/icomoon/style.css">
+  <link rel="icon" href="assets/images/logo.ico">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
   <!-- Estructura del header -->
   <header>
-    <!-- Estructura de la barra de navegación -->
-    <nav class="nav-bar">
+    <nav>
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Notificaciones</a></li>
-        <li><a href="#">Mensajes</a></li>
+        <li class="nav-bar"><a href="#"><i class="icon-home" aria-hidden="true"></i>Inicio</a></li>
+        <li class="nav-bar"><a href="#"><i class="icon-bell" aria-hidden="true"></i>Notificaciones</a></li>
+        <li class="nav-bar"><a href="#"><i class="icon-mail2" aria-hidden="true"></i>Mensajes</a></li>
       </ul>
     </nav>
-    <!-- Estructura del logo -->
-    <div class="logo">
-          <i class="icon-twitter" aria-hidden="true"></i>
-    </div>
-    <!-- Estructura de navegación extras -->
-    <div class="nav-extras">
-      <div class="search">
-        <form class="search-box"><input type="text" class="search-bar" placeholder="Buscar en Twitter"></form>
-      </div>
+
+    <figure class="logo"><i class="icon-twitter" aria-hidden="true"></i></figure>
+
+    <nav>
       <ul>
+        <li class="nav-extra">
+          <div class="search-box">
+            <i class="icon-search" aria-hidden="true"></i>
+            <form class="search"><input type="text" class="search-bar" placeholder="Buscar en Twitter"></form>
+          </div>
+        </li class="nav-extra">
         <li class="avatar">
           <a href="#"><i class="icon-user" aria-hidden="true"></i></a>
-        </li>
-        <li>
+        </li class="nav-extra">
+        <li class="Twittear">
           <button class="btn">Twittear</button>
         </li>
       </ul>
-    </div>
+    </nav>
   </header>
+
   <!-- Estructura de formulario -->
-  <section class="container">
-      <form class="box-tweet">
-          <input id="new-tweet" type="text" placeholder="Que esta pasando?">
+  <main>
+      <form class="container">
+        <textarea id="new-tweet" type="text" placeholder="Que esta pasando?">
+        </textarea>
+        <p id="cont">140</p>
+        <button id="send-tweet" type="button">Twittear</button>
       </form>
-      <p>140</p>
-      <button class="send" id="send-tweet" type="button">Twittear</button>
-  </section>
+      <div id="text"></div>
+  </main>
+
   <!-- Enlazando archivo js -->
   <script type="text/javascript" src="js/app.js"></script>
 </body>
