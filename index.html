@@ -11,45 +11,126 @@
 <body>
   <!-- Estructura del header -->
   <header>
-    <nav>
-      <ul>
-        <li class="nav-bar"><a href="#"><i class="icon-home" aria-hidden="true"></i>Inicio</a></li>
-        <li class="nav-bar"><a href="#"><i class="icon-bell" aria-hidden="true"></i>Notificaciones</a></li>
-        <li class="nav-bar"><a href="#"><i class="icon-mail2" aria-hidden="true"></i>Mensajes</a></li>
-      </ul>
-    </nav>
-
-    <figure class="logo"><i class="icon-twitter" aria-hidden="true"></i></figure>
-
-    <nav>
-      <ul>
-        <li class="nav-extra">
-          <div class="search-box">
-            <i class="icon-search" aria-hidden="true"></i>
-            <form class="search"><input type="text" class="search-bar" placeholder="Buscar en Twitter"></form>
-          </div>
-        </li class="nav-extra">
-        <li class="avatar">
-          <a href="#"><i class="icon-user" aria-hidden="true"></i></a>
-        </li class="nav-extra">
-        <li class="Twittear">
-          <button class="btn">Twittear</button>
-        </li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="subcontainer nav">
+        <ul>
+          <li class="nav-bar"><a href="#"><i class="icon-home" aria-hidden="true"></i>Inicio</a></li>
+          <li class="nav-bar"><a href="#"><i class="icon-bell" aria-hidden="true"></i>Notificaciones</a></li>
+          <li class="nav-bar"><a href="#"><i class="icon-mail2" aria-hidden="true"></i>Mensajes</a></li>
+        </ul>
+      </nav>
+      <figure class="subcontainer icon">
+        <i class="icon-twitter" aria-hidden="true"></i>
+      </figure>
+      <nav class="subcontainer extra">
+        <ul>
+          <li class="search">
+            <form class="search-box">
+              <input type="text" placeholder="Buscar en Twitter">
+              <i class="icon-search" aria-hidden="true"></i>
+            </form>
+          </li>
+          <li class="avatar">
+            <a href="#"><i class="icon-user" aria-hidden="true"></i></a>
+          </li>
+          <li class="Twittear">
+            <button class="btn">Twittear</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <!-- Estructura de seccion principal -->
+  <section>
+    <div class="container">
+      <div class="dashboard left">
+        <div class="profileCard">
+          <div class="fondo"></div>
+          <div class="photo"></div>
+          <div class="date">
+            <p class="nick">Peluso</p>
+            <p class="user">@PelusoQ</p>
+          </div>
+          <div class="info">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="textP">Tweets</td>
+                  <td class="textP">Siguiendo</td>
+                  <td class="textP">Seguidores</td>
+                </tr>
+                <tr>
+                  <td class="number">100</td>
+                  <td class="number">200</td>
+                  <td class="number">500</td>
+                </tr>
+              </tbody>
+            </table>
 
-  <!-- Estructura de formulario -->
-  <main>
-      <form class="container">
-        <textarea id="new-tweet" type="text" placeholder="Que esta pasando?">
-        </textarea>
-        <p id="cont">140</p>
-        <button id="send-tweet" type="button">Twittear</button>
-      </form>
-      <div id="text"></div>
-  </main>
 
+          </div>
+        </div>
+      </div>
+      <div class="dashboard main">
+        <div class="tweet-box">
+          <figure class="photo-box">
+          </figure>
+          <form>
+            <textarea id="new-tweet" type="text" placeholder="Que esta pasando?"></textarea>
+            <p id="cont">140</p>
+            <button id="send-tweet" type="button">Twittear</button>
+          </form>
+        </div>
+        <div id="tweets-container"></div>
+        <div class="stream-conteiner">
+          <div class="stream-item">
+            <p>Ver 1 tweet nuevo</p>
+          </div>
+          <div class="stream">
+            <div class="stream-header">
+              <p>Por si te lo perdiste</p>
+            </div>
+            <ol>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard right">
+        <div class="module">
+          <div class="">
+            <h3>A quien seguir</h3>
+            <p>. Actualizar</p>
+            <p>. Ver todos</p>
+          </div>
+          <div class="recomended followers">
+            <div class="item">
+              <div class="item-logo"></div>
+              <h1>IBM</h1>
+              <h2>@IBM</h2>
+              <button>Seguir</button>
+            </div>
+            <div class="item">
+              <div class="item-logo"></div>
+              <h1>El Comercio</h1>
+              <h2>@elcomercio_peru</h2>
+              <button>Seguir</button>
+            </div>
+            <div class="item">
+              <div class="item-logo"></div>
+              <h1>Inkafarma</h1>
+              <h2>@Inkafarmaperu</h2>
+              <button>Seguir</button>
+            </div>
+          </div>
+        </div>
+        <div class="module footer"></div>
+      </div>
+    </div>
+  </section>
   <!-- Enlazando archivo js -->
   <script type="text/javascript" src="js/app.js"></script>
 </body>
