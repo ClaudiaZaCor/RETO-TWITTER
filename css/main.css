@@ -184,6 +184,7 @@ textarea {
   background-color: white;
   resize: none;
   outline: none;
+  overflow: hidden;
 }
 
 #cont {

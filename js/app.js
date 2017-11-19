@@ -30,10 +30,16 @@ var boxText = document.getElementById('new-tweet');
 var maxChar = document.getElementById('cont');
 var countChar = 0;
 
-boxText.addEventListener('keyup',spaceDisp)
+boxText.addEventListener('keyup',spaceDisp);
+boxText.addEventListener('keyup',resize);
 
 function spaceDisp(event) {
   var limitChar = 140;
   countChar = boxText.value.length;
   maxChar.textContent = limitChar - countChar;
+}
+
+function resize(){
+  var area = this;
+  boxText.style.cssText = 'height:' + boxText.scrollHeight + 'px';
 }
