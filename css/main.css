@@ -16,7 +16,7 @@ body {
 .container {
   position: relative;
   margin: 0 5%;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
   overflow: auto;
   width: 90%;
 }
@@ -41,12 +41,13 @@ header .container {
 }
 
 .subcontainer {
-  padding: 15px 0;
+  padding: 10px 0;
 }
 
 .nav {
   float: left;
   display: inline-block;
+  padding-top: 20px;
 }
 
 .nav ul {
@@ -58,7 +59,7 @@ header .container {
 .nav-bar {
   float: left;
   list-style: none;
-  padding-right: 25px;
+  padding-right: 20px;
 }
 
 .nav-bar a {
@@ -69,10 +70,12 @@ header .container {
 .nav-bar a i {
   padding-right: 10px;
 }
+
 .icon {
   display: inline-block;
   width: 24px;
   height: 21px;
+  padding-top: 25px;
 }
 
 .extra {
@@ -85,8 +88,48 @@ header .container {
   list-style: none;
 }
 
-/*Seccion principal*/
+.avatar {
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-top: 10px;
+}
 
+.search-box {
+  position:relative;
+}
+
+.search-box input {
+  background-color: #f5f8fa;
+  border-radius: 21px;
+  border: 1px solid #e6ecf0;
+  font-size: 12px;
+  padding: 8px 32px 8px 12px;
+}
+
+.icon-search {
+  cursor: pointer;
+  display: block;
+  height: 26px;
+  position: absolute;
+  right: 3px;
+  top: 6px;
+  width: 26px;
+}
+
+.btn {
+  background-color: #4AB3F4;
+  border-color: transparent;
+  border-radius: 100px;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 6px 16px;
+  color: #fff;
+}
+
+/*Seccion principal*/
 section {
   height: 100%;
 }
@@ -98,7 +141,7 @@ section .container {
 .dashboard {
   float: left;
   width: 290px;
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
 }
 
 /*Primera seccion Izq*/
@@ -106,7 +149,7 @@ section .container {
   border: 1px solid #e6ecf0;
   background: #fff;
   position: relative;
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
 }
 
 .fondo {

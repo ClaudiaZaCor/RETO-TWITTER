@@ -37,6 +37,9 @@ function spaceDisp(event) {
   var limitChar = 140;
   countChar = boxText.value.length;
   maxChar.textContent = limitChar - countChar;
+  if (countChar > 0 && countChar <= 140) {
+    boton.disabled = false;
+  } else boton.disabled = true;
 }
 
 function resize(){
